@@ -16,24 +16,13 @@ export function PokeCards(props: string) {
   return (
     
     <>
-      <Card
-        direction={{ base: "column", sm: "row" }}
-        overflow="hidden"
-        variant="outline"
-      >
-        <Image
-          objectFit="cover"
-          maxW={{ base: "100%", sm: "200px" }}
-          src={props.image}
-          alt="Caffe Latte"
-        />
+    <Card>
+      <Image src={props.image}/>
+      <CardBody textAlign={'center'}>
+        {props.name}
+      </CardBody>
+    </Card>
 
-        <Stack>
-          <CardBody>
-            <Heading size="md">{props.name}</Heading>
-          </CardBody>
-        </Stack>
-      </Card>
     </>
   );
 }

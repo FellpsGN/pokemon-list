@@ -15,7 +15,7 @@ function App() {
 
     const getPokemon = () => {
       var endpoints = [];
-      for (var i = 1; i < 50; i++) {
+      for (var i = 1; i < 250; i++) {
         endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}`)
       }
       console.log(endpoints)
@@ -45,7 +45,7 @@ function App() {
       </Flex>
 
       <Flex p={8}>
-        <Grid templateColumns='repeat(7, 1fr)' gap={6}>
+        <Grid templateColumns='repeat(13, 1fr)' gap={6}>
           {pokemons.map( (pokemon, index) => (
             <PokeCards key={index} name={pokemon.data.name} image={pokemon.data.sprites.front_default}/>
           ))}
