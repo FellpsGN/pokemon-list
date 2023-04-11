@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #1D2C5E;
+  color: white;
+  padding: 25px;
+}
+
+.header img {
+  width: 8rem;
+}
