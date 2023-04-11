@@ -37,11 +37,6 @@ function App() {
         <Box>
           <img src={LogoPoke} alt="pokemon" />
         </Box>
-        <Box>
-          <div>
-            <h1>Pokemon API</h1>
-          </div>
-        </Box>
       </Flex>
 
       <Flex p={8}>
